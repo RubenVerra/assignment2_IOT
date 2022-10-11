@@ -12,13 +12,14 @@ provider "docker" {
 }
 
 resource "docker_image" "nginx" {
-  name         = "nginx:latest"
+  name         = "ghcr.io/axelvanherle/iottask2/hallo:sha-6e63ed5"
   keep_locally = false
 }
 
 resource "docker_container" "nginx" {
   image = docker_image.nginx.latest
-  name  = "tutorial"
+  name  = "iotTask2"
+  must_run = false
   ports {
     internal = 80
     external = 8000

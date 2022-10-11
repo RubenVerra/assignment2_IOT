@@ -15,5 +15,5 @@ jobs:
           username: rubenverra
           password: ${{ secrets.GITHUB_TOKEN }}
           registry: docker.pkg.github.com
-          repository: rubenverra/assignment2_IOT/game
+          repository: rubenverra/assignment2_iot/game
           tag_with_sha: true

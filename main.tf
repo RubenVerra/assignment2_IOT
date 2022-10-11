@@ -12,7 +12,7 @@ provider "docker" {
 }
 
 resource "docker_image" "nginx" {
-  name         = "ghcr.io/axelvanherle/iottask2/hallo:sha-6e63ed5"
+  name         = "ghcr.io/rubenverra/assignment2_iot/game:sha-a021833"
   keep_locally = false
 }
 
